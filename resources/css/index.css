@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poetsen+One&display=swap');
+
+* {
+    font-family: "Cinzel", serif;
+    margin: 0;
+}
+
+body {
+    background-color: #200407;
+    overflow-x: hidden;
+}
+
+.scallop {
+    position: relative;
+    background: #200407;
+    padding: 30px;
+}
+
+.scallop::after { 
+    position: absolute;
+    z-index: 4;
+    bottom: -50px;
+    left: 0px;
+    width: 100%;
+    content: "";
+    background: radial-gradient(circle at 50% 0%, #200407 25%, transparent 26%, transparent 40%);
+    background-color: transparent;
+    background-size: 50px 100px;
+    height: 50px;
+    background-repeat: repeat-x;
+}
+
+.navigation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.navigation-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem; 
+}
+
+.logo {
+    width: clamp(1rem, 2vw, 4rem); 
+    height: auto;
+}
+
+.navigation-logo h1 {
+    color: white;
+    font-weight: 500;
+    font-size: clamp(1rem, 2vw, 3rem); 
+}
+
+.navigation-buttons {
+    display: flex;
+    gap: 2rem;
+    color: white;
+    font-size: clamp(12px, 20px, 30px); 
+}
+
+.header-image {
+    position: relative;
+    width: 100%;
+    height: 70vh; /* div class in itself has no height*/
+    background: 
+        linear-gradient(to bottom, rgba(30, 11, 11, 0.4), rgba(30, 11, 11, 0.4)),
+        url("../images/header.jpg") no-repeat;
+    background-size: cover;
+    background-position: 50% 40%;
+    padding-bottom: 1rem;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-content {
+    position: relative;
+    text-align: center;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+
+.header-content h1 {
+    font-size: clamp(12px, 2vw, 4rem); 
+    color: white;
+    font-weight: 400;
+    text-shadow: 0 2px 10px rgba(13, 2, 2, 0.836);
+}
+
+.learn-more {
+    width: 20%;
+    color: white;
+    background-color: #20040794;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.learn-more:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 900px) { 
+    .header-image {
+        height: 50vh; 
+        background-size: 150%;
+    }
+
+    .learn-more {
+        width: 40%;
+    }
+}
+
+@media (max-width: 600px) { 
+    .learn-more {
+        font-size: 10px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 400px) { 
+    .header-image {
+        height: 40vh; 
+    }
+}
+
+.description-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.parallax-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30vh;
+    height: 80vh;
+}
+
+.mainart {
+    position: absolute;
+    width: clamp(400px, 50vw, 1200px);
+}
+
+.clouds {
+    position: absolute;
+    width: clamp(800px, 70%, 2000px);
+}
+
+#cloud1 {
+    left: -40%;
+    opacity: 0;
+}
+
+#cloud2 {
+    right: -40%;
+    opacity: 0;
+}
+
+
+@media (max-width: 750px) { 
+    #cloud1 {
+        left: -30%;
+    }
+
+    #cloud2 {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) { 
+    #cloud1 {
+        left: 20%;
+        opacity: 0;
+        width: 400px;
+    }
+
+    #cloud2 {
+        display: none;
+    }
+}
