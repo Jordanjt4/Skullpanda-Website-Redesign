@@ -166,26 +166,3 @@ body {
     right: -40%;
     opacity: 0;
 }
-
-
-@media (max-width: 750px) { 
-    #cloud1 {
-        left: -30%;
-    }
-
-    #cloud2 {
-        display: none;
-    }
-}
-
-@media (max-width: 400px) { 
-    #cloud1 {
-        left: 20%;
-        opacity: 0;
-        width: 400px;
-    }
-
-    #cloud2 {
-        display: none;
-    }
-}
