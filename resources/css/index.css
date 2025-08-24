@@ -46,7 +46,7 @@ body {
 }
 
 .logo {
-    width: clamp(1rem, 2vw, 4rem); 
+    width: clamp(1.5rem, 2vw, 4rem); 
     height: auto;
 }
 
