@@ -221,6 +221,7 @@ body {
     }
 
     #quote {
+        width: 90%;
         font-size: clamp(10px, 12px, 15px);
     }
 }
