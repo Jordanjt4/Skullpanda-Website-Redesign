@@ -133,6 +133,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0.5rem;
 }
 
 .parallax-section {
@@ -207,7 +208,7 @@ body {
     }
 
     .parallax-section {
-        width: 50vh;
+        width: 40vh;
     }
 
     .mainart {
