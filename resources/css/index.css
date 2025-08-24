@@ -128,12 +128,6 @@ body {
     }
 }
 
-@media (max-width: 400px) { 
-    .header-image {
-        height: 40vh; 
-    }
-}
-
 .description-section {
     position: relative;
     display: flex;
@@ -198,12 +192,26 @@ body {
     text-align: center;
     line-height: 2;
     font-family: "Cormorant Garamond", serif;
-    font-size: clamp(15px, 25px, 30px);
+    font-size: clamp(10px, 25px, 30px);
 }
 
 #quote {
     color: white;
     width: 50%;
     text-align: center;
-    font-size: clamp(10px, 15px, 20px);
+    font-size: clamp(5px, 15px, 20px);
+}
+
+@media (max-width: 400px) { 
+    .header-image {
+        height: 40vh; 
+    }
+
+    #long-description {
+        width: 90%;
+    }
+
+    #quote {
+        width: 70%;
+    }
 }
