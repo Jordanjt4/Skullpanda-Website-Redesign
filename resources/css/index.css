@@ -133,7 +133,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
 }
 
 .parallax-section {
@@ -211,13 +210,4 @@ body {
         width: 300px;
     }
 
-    #long-description {
-        font-size: 10px;
-        width: 90%;
-    }
-
-    #quote {
-        width: 80%;
-        font-size: 5px;
-    }
 }
