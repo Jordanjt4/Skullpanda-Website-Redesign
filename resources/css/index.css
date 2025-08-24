@@ -207,13 +207,17 @@ body {
         height: 40vh; 
     }
 
+    .mainart {
+        width: 300px;
+    }
+
     #long-description {
-        font-size: 4px;
+        font-size: 10px;
         width: 90%;
     }
 
     #quote {
         width: 80%;
-        font-size: 3px;
+        font-size: 5px;
     }
 }
