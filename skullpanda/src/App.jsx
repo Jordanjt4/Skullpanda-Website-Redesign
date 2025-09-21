@@ -4,7 +4,7 @@ import {Description} from '../components/Description'
 import ImageContainer from '../components/ImageSlider'
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Biography from '../components/Biography'
-import Footer from '../components/Footer'
+import FooterComponent from '../components/Footer'
 import './App.css'
 
 function App() {
@@ -45,7 +45,7 @@ function App() {
         warmthImages={warmthImages} warmthTitle="Warmth Series"
       />
       <Biography />
-      <Footer />
+      <FooterComponent />
     </>
   )
 }
