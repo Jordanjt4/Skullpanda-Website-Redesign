@@ -1,4 +1,4 @@
-I re-imagined the Skullpanda Website main page to practice designs. 
+I re-imagined the Skullpanda Website main page to practice React.
 
 This is a passion project at most (I had an itch to design with reds and gradients!), but I learned about React components, responsive design, and is CSS heavy.
 
